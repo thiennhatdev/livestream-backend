@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "idol_groups",
+  "info": {
+    "singularName": "idol-group",
+    "pluralName": "idol-groups",
+    "displayName": "IdolGroup"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userId": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "beGroup"
+    }
+  }
+}
